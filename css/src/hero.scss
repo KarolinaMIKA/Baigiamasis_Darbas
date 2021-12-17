@@ -6,10 +6,10 @@
     align-items: center;
     justify-content: flex-start;
     padding: 200px 0;
-    background-image: url('https://github.com/KarolinaMIKA/Baigiamasis_Darbas/blob/main/css/images/hero-image.jpg');
+    background-image: url("../css/images/hero-image.jpg");
     background-size: cover;
     background-position: center center;
-}
+
     &:before {
         content: '';
         position: absolute;
@@ -61,3 +61,4 @@
             }
         }
     }
+}
