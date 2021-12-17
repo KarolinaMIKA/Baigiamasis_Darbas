@@ -1,14 +1,15 @@
 .hero {
+    
     position: relative;
     margin-top: 72px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 200px 0;
-    background-image: url(C:\Users\37062\Desktop\Baigiamasis_Darbas\css\images\hero-image.jpg);
+    background-image: url('https://github.com/KarolinaMIKA/Baigiamasis_Darbas/blob/main/css/images/hero-image.jpg');
     background-size: cover;
     background-position: center center;
-
+}
     &:before {
         content: '';
         position: absolute;
@@ -41,7 +42,7 @@
             }
 
             input:checked ~ label:before {
-                background: red;
+                background: rgb(158, 158, 158);
             }
 
             label {
@@ -60,4 +61,3 @@
             }
         }
     }
-}
