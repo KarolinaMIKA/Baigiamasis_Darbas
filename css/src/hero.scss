@@ -27,7 +27,9 @@
         z-index: 99;
 
     .column{
-        flex-direction: column;
+        flex-direction: row;
+
+      
         img{
             padding-bottom: 22.6px;
         }
@@ -40,7 +42,6 @@
         width: 100%;
         border-radius: 5px;
         background-color: #fff;
-        // padding: 20px;
 
         .form-row {
             display: flex;
@@ -51,8 +52,6 @@
             font-size: 20px;
             padding-top: 17px;
             padding-bottom: 16px;
-            // padding-left: 50px;
-            // padding-right: 50px;
             background-color: #F5F5F5;
             text-align: center;
 
@@ -148,3 +147,18 @@
     background-color: #42080800;
     color: #FFFFFF;
 }
+
+
+@media (max-width: 830px) { 
+    .hero{
+        display: flex;
+    
+    .container {
+        display: inline-block;
+    
+
+        .form-box{
+        .form-row {
+            margin-top:30px;
+    }}}}}
+    

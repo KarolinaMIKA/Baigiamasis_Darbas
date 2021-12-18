@@ -1,0 +1,99 @@
+.media{
+    display: flex;
+    justify-content: space-between;
+    .media-column{
+        flex-direction: column;  
+        }
+    }
+    h3{
+        padding-top: 19px;
+        padding-left: 151px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        color: #333333;
+    }
+    p{
+        padding-left: 151px;
+        padding-bottom: 19px;
+        font-size: 14px;
+        color: #86878B;
+
+    }
+    
+    .media-column2{
+        display:flex;
+        padding-right: 158px;
+        padding-top: 38px;
+        padding-bottom: 37px;
+        
+        .Facebook{
+            margin-right: 102.8px;
+            cursor: pointer;
+        }
+        .Instagram{
+            margin-right: 107px;
+            cursor: pointer;
+        }
+        .Twitter{
+            margin-right: 108.9px;
+            cursor: pointer;
+        }
+        .Pinterest{
+            margin-right: 105.6px;
+            cursor: pointer;
+        }
+        .Wifi{
+            cursor: pointer;
+        }
+    }
+
+
+    @media (max-width: 900px) { 
+        .media {
+            display: block;
+           
+        .media-column{
+            display: block;
+            text-align:center;
+            padding-top: 19px;
+
+            p{
+                padding-left: 0px;  
+            }
+            h3{
+                padding-left: 0px;  
+            }
+
+        }
+        .media-column2{
+            position: relative;
+            justify-content: center;
+            padding-left: 25%;
+             
+            .Facebook{
+                margin-right: 5px;
+                cursor: pointer;
+
+            }
+            .Instagram{
+                margin-right: 5px;
+                cursor: pointer;
+    
+            }
+            .Twitter{
+                margin-right: 5px;
+                cursor: pointer;
+       
+            }
+            .Pinterest{
+                margin-right: 5px;
+                cursor: pointer;
+           
+            }
+            .Wifi{
+                cursor: pointer;
+         
+            }
+        }}}
+
+        
