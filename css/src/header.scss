@@ -4,6 +4,7 @@ header {
     left: 0;
     width: 100%;
     background-color: #1C1C1C;
+    z-index: 99999;
 
     @media (max-width: 700px) { 
         padding: 10px 0;}
@@ -23,7 +24,7 @@ header {
             ul {
                 list-style: none;
                 display: flex;
-                padding: 0;
+                // padding: 0;
 
                 li {
                     color: #fff;
@@ -35,7 +36,7 @@ header {
                         @media (max-width: 700px) {
                             position: absolute;
                             top: 100%;
-                            left: 0;
+                            left: 50%;
                             width: 100%;
                             height: calc(100vh - 62px);
                             background-color: #999;
@@ -60,7 +61,7 @@ header {
                                 }   
                               }
                             }
-                    }
+                    }}}
                 }
             }
         }
@@ -145,4 +146,4 @@ header {
       .hamburger-inner:before,
       .hamburger-inner:after {
         background-color: #fff;
-      }}}}}
+      }}}
