@@ -1,0 +1,140 @@
+.blue {
+    padding-top: 97px;
+    text-align:center;
+    background-color: #6696E2;
+    h2{
+        position: relative;
+        padding-bottom: 50px;
+        size: 36px;
+        color: #FFFFFF;
+        font-weight: 700;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 64px;
+            height: 2px;
+            top: 50px;
+            left: 48%;
+            background-color: #41D395;
+    }}
+p{
+    color: #FFFFFF;
+    padding-bottom: 83.2px;
+}}
+.bluecolumn{
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 700px) { 
+        display: inline;
+    
+       }
+
+.whiterow{
+    justify-content: center;
+   
+
+    
+}
+
+table{
+    flex-direction: column;
+    text-align:center;
+    width: 343px;
+    
+    border-spacing:0;
+
+    @media (max-width: 1140px) { 
+        width: 300px;
+    
+       }
+       @media (max-width: 1020px) { 
+        width: 200px;
+       }
+       @media (max-width: 700px) { 
+        width: 343px;}
+
+    tr:nth-child(-n+3){
+        background-color: #333333;
+        
+    }
+    tr:nth-child(-n+1){
+        color: #FFFFFF;
+        font-size: 20px;
+        
+        ;
+
+        td{
+            padding-top: 14px;
+        padding-bottom: 21px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        }
+    }
+    tr:nth-child(-n+1){
+        font-size: 20px;
+    }
+    tr:nth-child(2){
+        font-size: 94px;
+        color: #FFFFFF;
+    }
+    tr:nth-child(3){
+        font-size: 14px;
+        color: #999999;
+        td{
+            padding-top: 14px;
+        padding-bottom: 19px;
+        }
+    }
+    tr:nth-child(4){
+        font-size: 14px;
+        color: #FFFFFF;
+        background-color:#41D395;
+
+        .popular{
+        padding-top: 10px;
+        padding-bottom: 12px;
+        }
+        td{
+            height: 6px;
+        }
+    }
+    tr:nth-child(n+5){
+        font-size: 14px;
+        color: #999999;
+        background-color: #FFFFFF;
+        td{
+            padding-top: 11px;
+        padding-bottom: 11px;
+        }
+    }
+
+    tr:last-child{
+        td{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }}
+
+
+}
+.middletable{
+    margin-left: 40px;
+    margin-right: 40px;
+
+    @media (max-width: 700px) { 
+       
+            margin: 0 auto;
+        }
+}
+.oddtable{
+    padding-top: 35px;
+    padding-bottom: 107.8px;
+    
+    @media (max-width: 700px) { 
+       
+        margin: 0 auto;
+    }
+}
+}
+
