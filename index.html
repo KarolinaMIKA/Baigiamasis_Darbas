@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -16,11 +17,21 @@
             <img src="css\images\logo.svg" alt="Logo" >
             <nav>
                 <ul>
-                    <li>Features</li>
-                    <li>About</li>
-                    <li>Pricing</li>
-                    <li>Reviews</li>
-                    <li>Contact</li>
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#reviews">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
                 </nav>
                 <div id="mobile-menu-trigger" class="hamburger hamburger--elastic">
@@ -30,8 +41,9 @@
                   </div>
                 </div>
     </header>
+
     <main>
-        <section class="hero">
+        <section class="hero" id="features">
             <div class="container">
                 <div class="column">
                     <img src="css\images\logo.svg" alt="Logo" width="246.74px">
@@ -70,6 +82,8 @@
                 </div>
             </div>
         </section>
+
+
         <section class="media">
             <div class="media-column">
             <h3>Social Media</h3>
@@ -89,9 +103,43 @@
 
         </section>
 
-        <section class="tabs">
 
+
+
+
+
+
+
+
+        <section class="about" id="about">
+            <div class="container">
+                <nav class="tab-navigation">
+                    <ul>
+                        <li data-target="register" class="active">
+                            <span>Register</span>
+                        </li>
+                        <li data-target="apply">
+                            <span>Apply</span>
+                        </li>
+                        <li data-target="receive">
+                            <span>Receive</span>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-tab="register" class="tab-content active">Register content</div>
+                <div data-tab="apply" class="tab-content">Apply content</div>
+                <div data-tab="receive" class="tab-content">Receive content</div>
+            </div>
         </section>
+
+
+
+
+
+
+
+
+
 
         <section class="black">
             
@@ -135,6 +183,7 @@
                 </div>
         
         </section>
+
 
         <section class="white">
             <h2>WHY THIS IS AWESOME</h2>
@@ -191,8 +240,7 @@
         </section>
 
 
-
-        <section class="blue">
+        <section class="blue" id="pricing">
             <h2>PRICING OPTIONS</h2>
             <p class="paddingP1white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="bluecolumn">
@@ -306,11 +354,80 @@
         </section>
 
 
-        <section></section>
-        <section></section>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2>What our customers are saying?</h2>
+                
+                <!-- Slider main container -->
+                <div class="swiper reviews-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="weather" id="contact">
+            <h2>
+                <span id="weather-in-celsius"></span>
+                <span>°C</span>
+                </h2>
+        </section>
     </main>
+
+
     <footer></footer>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="Main.js"></script>
 </body>
 </html>
