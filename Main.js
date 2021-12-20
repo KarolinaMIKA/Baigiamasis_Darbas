@@ -1,5 +1,5 @@
 "use strict"
-//Burger
+
 
 let menuTrigger = document.getElementById("mobile-menu-trigger");
 let mobileMenu = document.querySelector("header nav");
@@ -64,7 +64,6 @@ function getCurrentWeatherInCelsius() {
     http.addEventListener('load', function() {
         const response = JSON.parse(http.response);
         const temperature = response.main.temp;
-        const temperature = Math.round(response.main.temp);
 
         if (temperature > 0) {
             weatherElement.innerText = "+" + temperature;

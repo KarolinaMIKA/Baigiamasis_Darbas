@@ -40,6 +40,13 @@
                 cursor: pointer;
                 transition: 0.3s ease-in-out;
 
+                span{
+                    transform: rotate(-45deg);
+                    color: #FFFFFF;
+                    size: 14px;
+                    font-weight: 600;
+                }
+
                 &:not(:last-child) {
                     margin-bottom: 20px;
                 }
@@ -58,5 +65,25 @@
         &.active {
             display: block;
         }
+    }
+
+    .about.pictures{
+        // display: inlin;
+        .square1{
+            height:168px;
+            width: 168px;
+            background-color: honeydew;
+        }
+        .square2{
+            width: 168px;
+            height:168px;
+            background-color: pink;
+        }
+        .square3{
+            width: 362.24px;
+            height:177.44px;
+            background-color: sandybrown;
+        }
+
     }
 }
