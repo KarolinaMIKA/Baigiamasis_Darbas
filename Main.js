@@ -36,11 +36,11 @@ const swiper = new Swiper('.reviews-swiper', {
     speed: 900,
     slidesPerView: 1,
     spaceBetween: 50,
-    // slidesPerGroup: 3,
+    slidesPerGroup: 3,
     autoHeight: true,
     loop: true,
     autoplay: {
-        delay: 2000,
+        delay: 3000, ///laikas
     },
     pagination: {
         el: '.swiper-pagination',
