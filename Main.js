@@ -56,7 +56,7 @@ const swiper = new Swiper('.reviews-swiper', {
 //
 // Get weather data from openweather API
 //
-const url = "https://api.openweathermap.org/data/2.5/weather?q=Vilnius&units=metric&appid=af1409639ececf4c3bd84a31fc54f5ae";
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Madrid&units=metric&appid=af1409639ececf4c3bd84a31fc54f5ae";
 const weatherElement = document.getElementById("weather-in-celsius");
 function getCurrentWeatherInCelsius() {
     const http = new XMLHttpRequest();

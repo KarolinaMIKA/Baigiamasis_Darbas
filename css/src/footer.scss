@@ -1,3 +1,60 @@
 footer {
-    background: pink;
-}
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media (max-width: 700px) {
+    display: block;
+
+    }
+
+    .media-column2{
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+    @media (max-width: 700px) {
+        justify-content: center;
+        .Facebook{
+            margin-right: 10px;
+            height: 30px;
+           
+        }
+        .Instagram{
+            margin-right: 10px;
+            height: 30px;
+            
+        }
+        .Twitter{
+            margin-right: 10px;
+            height: 30px;
+            
+        }
+        .Pinterest{
+            margin-right: 10px;
+            height: 30px;
+        
+        }
+        .Wifi{
+            height: 30px;
+        }
+    }
+    img{
+        height: 20px;
+        padding-right: 0px;
+        
+    }}
+
+    p{
+        padding-left: 0px;
+        padding-top: 0px;
+        font-size: 18px;
+        color: #FFFFFF;
+
+        @media (max-width: 700px) {
+            padding-top: 30px;
+        text-align: center};
+    
+}}

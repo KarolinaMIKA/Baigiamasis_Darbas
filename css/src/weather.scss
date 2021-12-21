@@ -1,13 +1,101 @@
 .weather {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 300px 0;
-    background: rebeccapurple;
+    text-align:center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    color: #FFFFFF;
+    background: #E27866;
 
-    h2 {
-        display: flex;
-        color: green;
-        font-size: 100px;
+    h4 {
+        
+        color: #FFFFFF;
+        font-size: 18px;
+        padding-bottom: 18px;
+
+        .city{
+            font-size: 12px;
+
+        }
+    }
+    p{
+        color: #FFFFFF; 
+        padding-top: 23px;
+        font-size: 14px;
+        padding-bottom: 18px;
     }
 }
+.form-box {        
+    max-width: 390px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: auto;
+
+
+    button{
+        background-color: #41D395;
+        cursor: pointer;
+        width: 158.12px;
+        height: 48px;
+        margin-bottom: 32.2px;
+        margin-left: 25%;
+        border-color: transparent;
+        border-radius: 5px;
+
+    }
+    .form-row {
+        display: flex;
+        flex-direction: column;
+
+        
+    input{
+        color:#DDDDDD;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 22px;
+        margin-left: 60px;
+        margin-right: 60px;
+        border-top: #ffffff00;
+        border-left: #ffffff00;
+        border-right: #ffffff00;
+        border-bottom: 1px solid #DDDDDD;
+        width: 260px;
+    }
+    }
+    .rows{
+        display: flex;
+        font-size: 9px;
+        // padding-top: 33px;
+        margin-left: 65px;
+        margin-bottom: 42px;
+
+    }
+    .radio-input-wrap {
+        flex-direction: row;
+        margin-left: 17px;
+        input {
+            font-size: 9px;
+            display: none;
+        }
+
+        input:checked ~ label:before {
+            background: #41D395;
+            box-shadow: inset 0px 0px 0px 2px #fff;
+        }
+
+        label {
+            text-transform: uppercase;
+            cursor: pointer;
+            color: #000000;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                border: 1px solid #41D395;
+                transition: 0.3s ease-in-out;
+                margin-right: 5.1px;
+            }
+        }
+    }}
