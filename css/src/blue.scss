@@ -2,6 +2,8 @@
     padding-top: 97px;
     text-align:center;
     background-color: #6696E2;
+
+    
     h2{
         position: relative;
         padding-bottom: 50px;
@@ -33,16 +35,12 @@ p{
 
 .whiterow{
     justify-content: center;
-   
-
-    
 }
 
 table{
     flex-direction: column;
     text-align:center;
     width: 343px;
-    
     border-spacing:0;
 
     @media (max-width: 1140px) { 
@@ -66,7 +64,7 @@ table{
         ;
 
         td{
-            padding-top: 14px;
+        padding-top: 14px;
         padding-bottom: 21px;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -121,18 +119,21 @@ table{
 .middletable{
     margin-left: 40px;
     margin-right: 40px;
+    cursor: pointer;
 
     @media (max-width: 700px) { 
-       
+        padding-bottom: 70px;
             margin: 0 auto;
         }
 }
 .oddtable{
     padding-top: 35px;
     padding-bottom: 107.8px;
+    cursor: pointer;
     
     @media (max-width: 700px) { 
-       
+        padding-top: 0px;
+        padding-bottom: 70px;
         margin: 0 auto;
     }
 }

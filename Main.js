@@ -33,10 +33,15 @@ for (let tabElement of tabNavigationElements) {
 // Reviews section swiper gallery
 //
 const swiper = new Swiper('.reviews-swiper', {
+
+    
     speed: 900,
     slidesPerView: 1,
     spaceBetween: 50,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
+    
+   
+
     autoHeight: true,
     loop: true,
     autoplay: {
@@ -74,4 +79,9 @@ function getCurrentWeatherInCelsius() {
     http.send();
 }
 window.addEventListener('load', getCurrentWeatherInCelsius)
+
+
+
+
+
 

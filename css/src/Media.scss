@@ -1,19 +1,17 @@
 .media{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     .media-column{
         flex-direction: column;  
         }
     }
     h3{
         padding-top: 19px;
-        padding-left: 151px;
         padding-bottom: 5px;
         font-size: 20px;
         color: #333333;
     }
     p{
-        padding-left: 151px;
         padding-bottom: 19px;
         font-size: 14px;
         color: #86878B;
@@ -22,7 +20,6 @@
     
     .media-column2{
         display:flex;
-        padding-right: 158px;
         padding-top: 38px;
         padding-bottom: 37px;
         
@@ -66,35 +63,34 @@
             }
 
         }
-        .media-column2{
-            position: relative;
-            justify-content: center;
-            padding-left: 25%;
-             
+        @media (max-width: 900px) {
+            .media-column2{
+                justify-content: center;
             .Facebook{
-                margin-right: 5px;
-                cursor: pointer;
-
+                margin-right: 10px;
+                height: 30px;
+               
             }
             .Instagram{
-                margin-right: 5px;
-                cursor: pointer;
-    
+                margin-right: 10px;
+                height: 30px;
+                
             }
             .Twitter{
-                margin-right: 5px;
-                cursor: pointer;
-       
+                margin-right: 10px;
+                height: 30px;
+                
             }
             .Pinterest{
-                margin-right: 5px;
-                cursor: pointer;
-           
+                margin-right: 10px;
+                height: 30px;
+            
             }
             .Wifi{
-                cursor: pointer;
-         
-            }
-        }}}
+                height: 30px;
+            }}
+        }
+        }
+        }
 
         
