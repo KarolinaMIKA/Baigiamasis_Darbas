@@ -25,6 +25,7 @@
     }
 
     .tab-navigation {
+       display: flex;
         ul {
             list-style: none;
             padding: 0;
@@ -67,23 +68,67 @@
         }
     }
 
-    .about.pictures{
-        // display: inlin;
-        .square1{
+    
+
+    }
+            .square1{
             height:168px;
             width: 168px;
-            background-color: honeydew;
+            background-image: url("../css//images/green.jpg");
+            background-repeat: no-repeat;
+            background-position:center;
+            margin-right: 26.5px;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                text-align: center;
+                
+                position: absolute;
+                vertical-align: middle;
+                height:168px;
+                width: 168px;
+                background-color: #E27866;
+                opacity: 0.8;
+            }
+            &::after {
+                content: 'Explore';
+                text-align: center;
+                top: 20%;
+                size: 20px;
+                position: absolute;
+                height:168px;
+                width: 168px;
+                color: #FFFFFF;
+                font-weight: 600;
+                
+            }
+            
         }
         .square2{
             width: 168px;
             height:168px;
-            background-color: pink;
+            background-image: url("../css//images/food.jpg");
+            background-repeat: no-repeat;
+            background-position:center;
+            cursor: pointer;
         }
         .square3{
             width: 362.24px;
             height:177.44px;
-            background-color: sandybrown;
+            background-image: url("../css//images/shoes.jpg");
+            background-repeat: no-repeat;
+            background-position:center;
+            margin-top: 20.6px;
+            cursor: pointer;
+            
         }
 
+
+    
+    .squareRow{
+        display: flex;
     }
-}
+
+  
+
