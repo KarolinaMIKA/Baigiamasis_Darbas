@@ -19,6 +19,10 @@
             top: 50px;
             left: 48%;
             background-color: #41D395;
+
+            @media (max-width: 990px) {
+                left: 45%;}
+            
     }}
 p{
     color: #FFFFFF;
