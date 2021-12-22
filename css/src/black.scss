@@ -1,6 +1,6 @@
 .black{
     display: flex;
-    background-color: #1C1C1C;
+    background-color: $black;
     @media (max-width: 990px) {
         padding-bottom: 60px;
     }
@@ -95,7 +95,7 @@
 
         .black{
             display: inline-block;
-            background-color: #1C1C1C;
+            background-color: $black;
             
         
             .black-logo{
