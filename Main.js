@@ -71,13 +71,78 @@ function getCurrentWeatherInCelsius() {
         const temperature = response.main.temp;
 
         if (temperature > 0) {
-            weatherElement.innerText = "+" + temperature;
+            weatherElement.innerText = "+" + temperature.toFixed(0);
         } else {
-            weatherElement.innerText = temperature;
+            weatherElement.innerText = temperature.toFixed(0);
         }
     })
     http.send();
 }
 window.addEventListener('load', getCurrentWeatherInCelsius)
 
+//JS Pirmos formos tikrinimas
+
+
+const name1 = document.getElementById("name1");
+const lastname1 = document.getElementById("lastname1");
+const number1 = document.getElementById("number1");
+const form1 = document.getElementById("form1");
+const errorElement = document.getElementById("error");
+
+form1.addEventListener("submit", (e) =>{
+    let messages = []
+    if(name1.value ==="" || name1.value == null){
+
+        messages.push('Name is mandatory')
+        
+    }
+
+    if(lastname1.value ==="" || lastname1.value == null){
+
+        messages.push('Last Name is mandatory')
+        
+    }
+    if(number1.value ==="" || number1.value == null){
+
+        messages.push('Number is mandatory')
+        
+    }
+
+    if(messages.length >0){
+        e.preventDefault()
+        errorElement.innerText = ('Please fill out all fields')
+    }
+})
+
+// Antra forma "weather"
+const name2 = document.getElementById("name2");
+const lastname2 = document.getElementById("lastname2");
+const number2 = document.getElementById("number2");
+const form2 = document.getElementById("form2");
+const errorElement2 = document.getElementById("error2");
+
+form2.addEventListener("submit", (e) =>{
+    let messages2 = []
+    if(name2.value ==="" || name2.value == null){
+
+        messages2.push('Name is mandatory')
+        
+    }
+
+    if(lastname2.value ==="" || lastname2.value == null){
+
+        messages2.push('Last Name is mandatory')
+        
+    }
+    if(number2.value ==="" || number2.value == null){
+
+        messages2.push('Number is mandatory')
+        
+    }
+
+    if(messages2.length >0){
+        e.preventDefault()
+        errorElement2.innerText = ('Please fill out all fields')
+    }
+})
 

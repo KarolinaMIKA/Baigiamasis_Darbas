@@ -56,13 +56,14 @@
 
                 </div>
                 <div class="form-box"class="column">
-                    <form>
+                    <form id="form1" style="border-top-left-radius: 5px;">
                         <div class="form-row">
                             <h2>Try your<span style="color:#E27866" > FREE </span>trial TODAY</h2>
                             <p>Your details</p>
-                            <input type= "text" placeholder="  First Name">
-                            <input type= "text" placeholder="  Last Name">
-                            <input type= "number" placeholder="  Phone Number">
+                            <div id='error' style="font-style: italic; font-size:10pt; color: red; text-align: center;"></div>
+                            <input id="name1"type= "text" placeholder="  First Name*" >
+                            <input id="lastname1"type= "text" placeholder="  Last Name*">
+                            <input id="number1"type= "number" placeholder="  Phone Number*" >
                             <p class="">Type of subscription</p>
                             
                             <div class="rows">
@@ -76,7 +77,7 @@
                                 <label for="subscription-yearly">Yearly</label>
                             </div>
                         </div>
-                            <h2 style="background-color: #41D395; cursor: pointer;">GET STARTED</h2>
+                            <button type="submit"> GET STARTED</button>
                         </div>
                     </form>
                 </div>
@@ -121,7 +122,7 @@
                 </nav>
                 
                 <div class="about.text">
-                <div data-tab="register" class="tab-content active" > <p style="color: #FFFFFF; font-size: 36px; font-weight: 600; padding-left: 54px; padding-right: 76;" >Tabs with soft transitioning
+                <div data-tab="register" class="tab-content active" > <p style="color: #FFFFFF; font-size: 36px; font-weight: 600; padding-left: 54px; padding-right: 76; @media (max-width:800px){font-size: 28px}" >Tabs with soft transitioning
                     effect. Explained propriety
                     of out perpetual his you.</p>
 
@@ -640,12 +641,12 @@
                 </h4>
 
                 <div class="form-box2">
-                    <form>
+                    <form form id="form2">
                         <div class="form-row2">
-        
-                            <input type= "text" placeholder="  First Name" style="padding-top: 33px;">
-                            <input type= "text" placeholder="  Last Name">
-                            <input type= "number" placeholder="  Phone Number">
+                            <div id='error2' style="font-style: italic; margin-bottom: -20px; margin-top:20px; font-size:10pt; color: red;"></div>
+                            <input id="name2" type= "text" placeholder="  First Name" style="padding-top: 33px;">
+                            <input id="lastname2" type= "text" placeholder="  Last Name">
+                            <input id="number2" type= "number" placeholder="  Phone Number">
                             
                             <div class="rows2">
                                 <div class="radio-input-wrap2">
@@ -658,7 +659,7 @@
                                     <label class="label2" for="subscription-company">COMPANY</label>
                                 </div>
                         </div>
-                            <button>SAVE</button>
+                            <button type="submit2">SAVE</button>
                         </div>
                     </form>
                 </div>
