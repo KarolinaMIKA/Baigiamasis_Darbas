@@ -16,9 +16,12 @@
             position: absolute;
             width: 64px;
             height: 2px;
-            top: 50px;
-            left: 48%;
+            margin-top: 50px;
             background-color: #eb0a0a;
+            left: 48%;
+            // @media (max-width: 990px) {
+            // margin-left: 10%;
+            // margin-right: 10%;}
     }}
 
     
