@@ -64,13 +64,9 @@
         animation: tab-reveal 0.5s forwards;
 
         &.active {
-            display: block;
-        }
-    }
-
-    
-
-    }
+            display: inline-flex;
+            
+        }}}
             .square1{
             height:168px;
             width: 168px;
@@ -139,3 +135,129 @@
     }
 
   
+
+
+    .square4{
+        height:168px;
+        width: 168px;
+        background-image: url("../css//images/hero-image.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        margin-right: 26.5px;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            text-align: center;
+            
+            position: absolute;
+            vertical-align: middle;
+            height:168px;
+            width: 168px;
+            background-color: #E27866;
+            opacity: 0.8;
+        }
+        &::after {
+            content: 'Explore';
+            text-align: center;
+            top: 20%;
+            size: 21px;
+            position: absolute;
+            height:168px;
+            width: 168px;
+            color: #FFFFFF;
+            font-weight: 600;
+            
+        }
+        
+    }
+    .square5{
+        width: 168px;
+        height:168px;
+        background-image: url("../css//images/green.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        cursor: pointer;
+    }
+    .square6{
+        width: 362.24px;
+        height:177.44px;
+        background-image: url("../css//images/shoes.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        margin-top: 20.6px;
+        cursor: pointer;
+        
+
+        @media (max-width: 800px) {   //sitas
+            display: none;             //sitas
+        }                               //sitas
+    }
+
+     
+           
+
+        .square7{
+            height:168px;
+            width: 168px;
+            background-image: url("../css//images/green.jpg");
+            background-repeat: no-repeat;
+            background-position:center;
+            margin-right: 26.5px;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                text-align: center;
+                
+                position: absolute;
+                vertical-align: middle;
+                height:168px;
+                width: 168px;
+                background-color: #E27866;
+                opacity: 0.8;
+            }
+            &::after {
+                content: 'Explore';
+                text-align: center;
+                top: 20%;
+                size: 20px;
+                position: absolute;
+                height:168px;
+                width: 168px;
+                color: #FFFFFF;
+                font-weight: 600;
+                
+            }
+            
+        }
+        .square8{
+            width: 168px;
+            height:168px;
+            background-image: url("../css//images/shoes.jpg");
+            background-repeat: no-repeat;
+            background-position:center;
+            cursor: pointer;
+        }
+        .square9{
+            width: 362.24px;
+            height:177.44px;
+            background-image: url("../css//images/hero-image.jpg");
+            background-repeat: no-repeat;
+            background-position:center;
+            margin-top: 20.6px;
+            cursor: pointer;
+            
+
+            @media (max-width: 800px) {   //sitas
+                display: none;             //sitas
+            }                               //sitas
+        }
+    
+    .squareRow{
+        display: flex;
+
+        @media (max-width: 800px) { //sitas
+            display: none;           //sitas
+        }                             //sitas
+    }

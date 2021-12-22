@@ -14,7 +14,7 @@ menuTrigger.addEventListener('click', function() {
 // About section tab navigation
 //
 const tabNavigationElements = document.querySelectorAll(".about .tab-navigation li");
-const tabContentElements = document.querySelectorAll(".about .tab-content");
+const tabContentElements = document.querySelectorAll(" .tab-content"); //isimtas .about
 function removeActiveClassesFromElements(elements) {
     for (let element of elements) {
         element.classList.remove("active");
@@ -79,9 +79,5 @@ function getCurrentWeatherInCelsius() {
     http.send();
 }
 window.addEventListener('load', getCurrentWeatherInCelsius)
-
-
-
-
 
 
