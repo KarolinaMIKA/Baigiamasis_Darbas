@@ -261,3 +261,12 @@
             display: none;           //sitas
         }                             //sitas
     }
+
+
+        .BigOne{
+            color: #FFFFFF; font-size: 36px; font-weight: 600; padding-left: 54px; padding-right: 76;
+            @media (max-width: 800px) {   
+                 font-size: 25px;
+                padding-left: 10px;          
+            } 
+        } 
